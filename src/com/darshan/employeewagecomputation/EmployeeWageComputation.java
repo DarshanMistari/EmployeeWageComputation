@@ -2,8 +2,6 @@ package com.darshan.employeewagecomputation;
 
 import java.util.Random;
 public class EmployeeWageComputation {
-
-	public static void main(String[] args) {
 		
 		int attendance;
 		int dailyWage=0;
@@ -16,6 +14,8 @@ public class EmployeeWageComputation {
 		final int FULL_TIME_HR = 8;
 		final int MONTHLY_WORKING_DAY = 20;
 		
+		public void employeewagecal()
+		{
 		System.out.println("Welcome to Employee Wage Computation Program.");
 
 		while(total_workig_hr <= 100 && total_working_day <= MONTHLY_WORKING_DAY)
@@ -53,7 +53,13 @@ public class EmployeeWageComputation {
 			System.out.println("----------------------");
 			total_working_day++;
 		}
+		
 		System.out.println("Total Monthly Wage :"+ total_wage);
 	}
-
+		public static void main(String[] args)
+		{
+			EmployeeWageComputation employeewagecomputation = new EmployeeWageComputation();
+			
+			employeewagecomputation.employeewagecal();
+		}
 }
